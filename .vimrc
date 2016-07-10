@@ -50,8 +50,15 @@ set cul
 " 按回车不会添加注释，按o不会添加注释
 set paste
 
+"让vim记忆上次编辑的位置
+autocmd BufReadPost *
+\ if line("'\"")>0&&line("'\"")<=line("$") |
+\ exe "normal g'\"" |
+\ endif
+
 set laststatus=2
 set number
+set relativenumber
 set noshowmode
 
 set tabstop=4
