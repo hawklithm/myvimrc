@@ -29,6 +29,8 @@ Plugin 'dimasg/vim-mark'
 Plugin 'minibufexplorerpp'
 Plugin 'a.vim'
 
+Plugin 'fatih/vim-go' " go 语言插件
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
